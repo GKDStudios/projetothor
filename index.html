@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="CSS\thor.css" >
+		<link rel="icon" href="https://previews.123rf.com/images/bourbon88/bourbon881801/bourbon88180100013/93009506-god-thor-hammer-mjollnir-round-traditional-scandinavian-ornament-and-runic-text-isolated-on-white-ve.jpg">
+		<title> Thor - daily chores </title>
+	</head>
+	<body>
+		<ul class="flex">
+			<span class="font-semibold text-xl tracking-tight text-red-800  border-teal-200 ">- | Thor - daily chores | -</span>
+  			<li class="mr-6">
+    			<a class="text-blue-500 hover:text-blue-800" href="thor.html">Adicionar</a>
+  			</li>
+  			<li class="mr-6">
+    			<a class="text-blue-500 hover:text-blue-800" href="ver.html">Ver tarefas</a>
+  			</li>
+  			<li class="mr-6">
+    			<a class="text-blue-500 hover:text-blue-800" href="editanddrop.html">Editar ou exluir</a>
+  			</li>
+		</ul>
+		<main>
+			<form class="w-full max-w-sm" id="FrmTarefa">
+					<!-- tarefa a ser adicionada -->
+				<ul>
+					<li>
+  						<div class="flex items-center border-b border-b-2 border-teal-500 py-2">
+    						<input class="tarefa-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" action="" placeholder="Tarefa a ser adicionada" aria-label="fchore" id="fTarefa"><br>
+    					</div>
+    				</li>
+    				<!-- Data -->
+    				<li>
+    					<div class="flex items-center border-b border-b-2 border-teal-500 py-2">
+    						<label for="data">DATA:</label>	
+    						<input class="data-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="date" action="" placeholder="Data" aria-label="fdate" id="fData"><br>
+    					</div>
+    				</li>
+    				<!-- Hora -->
+    				<li>
+    					<div class="flex items-center border-b border-b-2 border-teal-500 py-2">
+    						<label for="hora">HORA:</label>
+    						<input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="time" action="" placeholder="Hora" aria-label="ftime" id="fTime">
+    					</div>
+    					</div> <br>
+    				</li>
+    				<!-- Opções -->
+    				<li>
+    					<div>
+ 							<input type="radio" id="frFeita" name="Feita">
+  							<label for="feita">Feita</label>
+						</div>
+						<div>
+  							<input type="radio" id="frNFeita" name="Nfeita">
+  							<label for="nfeita">Não feita</label>
+						</div><br>
+					</li>
+					<li>
+						<!-- botões -->
+						<div align="center">
+   							<input class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded" type="submit" value="Adicionar" id="AdcTrf">
+    						
+  						</div><br><br>
+					</li>
+				</ul>
+			</form>
+					
+  			<table id="tblLista">
+
+  			</table>
+		</main>
+    	<footer>
+    		&copy; Yampi 2019. 
+    	</footer>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    		$ (function(){
+    			var operacoes = "Adc"; "Edt"=Edição
+    			var table_select = -1; //item selecionado.
+    			var tbTarefas = localStorage.getItem("tbTarefas");//"puxa" o dado armazenado.
+    			tbTarefas = JSON.parse(tbTarefas);//Faz a string virar um objeto.
+    			if (tbTarefas == null)
+    			tbTarefas = [];
+    		});
+
+    		function Adicionar(){
+    			var tarefinha = JSON.stringify({
+    				Tarefa    : $("#fTarefa").val(),
+    				Data      : $("#fData").val(),
+    				HORA      : $("#fTime").val(),
+    				Feita     : $("#frFeita").val(),
+    				Não Feita : $("#frNFeita").val()
+    			});
+    			tbTarefas.push (tarefinha);
+    			localStorage.setItem("tbTarefas", JSON.stringify(tbTarefas));
+    			alert(" - Registro Adicionado com sucesso!");
+    			return true;
+    		}
+
+    		function Editar(){
+    			tbTarefas[table_select] = JSON.stringify({
+    				Tarefa    : $("#fTarefa").val(),
+    				Data      : $("#fData").val(),
+    				Hora      : $("#fTime").val(),
+    				Feita     : $("#frFeita").val(),
+    				Não_Feita : $("#frNFeita").val()
+    			});//altera o conteudo do item selecionado.
+    			localStorage.setItem("tbTarefas", JSON.stringify(tbTarefas));
+    			alert(" - As informações foram alteradas!")
+    			operacoes = "Adc"//volta para o padrão.
+    			return true;
+    		}
+
+    		function Excluir(){
+    			tbTarefas.splice(table_select, 1);
+    			localStorage.setItem("tbTarefas", JSON.stringify(tbTarefas));
+    			alert(" - As informações foram excluidas!")
+    		}
+
+ 			function Listar(){
+    			$("#tblListar").html("");
+    			$("#tblListar").html(
+			        "<thead>"+
+			        "   <tr>"+
+			        "   <th></th>"+
+			        "   <th>Tarefa</th>"+
+			        "   <th>Data</th>"+
+			        "   <th>Hora</th>"+
+			        "   <th>Feita</th>"+
+			        "   <th>Não Feita</th>"+
+			        "   </tr>"+
+			        "</thead>"+
+			        "<tbody>"+
+			        "</tbody>"
+			    );
+    		for(var i in tbTarefas){
+        	var clica = JSON.parse(tbTarefas[i]);
+        		$("#tblListar tbody").append("<tr>");
+        		$("#tblListar tbody").append("<td><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvucpkc0jCqSb8Fudvdzy0JnuGDTQ8EEa5OoWiSxKl6_ui5Yt6pg' alt='"+i+"'class='btnEditar'/><img src='https://es.investinbogota.org/core/misc/icons/e32700/error.svg' alt='"+i+"' class='btnExcluir'/></td>");
+        		$("#tblListar tbody").append("<td>"+clica.Tarefa+"</td>");
+        		$("#tblListar tbody").append("<td>"+clica.Data+"</td>");
+        		$("#tblListar tbody").append("<td>"+clica.Hora+"</td>");
+        		$("#tblListar tbody").append("<td>"+clica.Feita+"</td>");
+        		$("#tblListar tbody").append("<td>"+clica.Não_Feita+"</td>");
+        		$("#tblListar tbody").append("</tr>");
+    		}
+		}
+
+    		$("#FrmTarefa").on("submit", function(){
+    			if (operacoes == "A")
+    				return Adicionar();
+    			else
+    				return Editar();
+    		});
+
+    		$("tblLista").on("click", ".btnEditar", function(){
+    			operacoes = "E";
+    			table_select = parseInt ($(this).attr("alt"));
+    			var clica = JSON.parse(tbTarefas[table_select]);
+    			$("#fTarefa").val(clica.Tarefa);
+    			$("#fData").val(clica.Data);
+    			$("#fTime").val(clica.Hora);
+    			$("#frFeita").val(clica.Feita);
+    			$("#frNFeita").val(clica.Não_Feita);
+    			$("#fTarefa").attr("readonly", "readonly");
+    			$("#Data").focus();
+    		});
+    		$("#tblListar").on("click", ".btnExcluir", function(){
+    			table_select = parseInt($(this).attr("alt"));
+   				 Excluir();
+    			 Listar();
+			});
+
+		</script>
+	</body>
+</html>

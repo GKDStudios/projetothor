@@ -1,0 +1,15 @@
+main{
+	margin:350px;
+	margin-top:80px;
+}
+li{
+	margin-top: 5px;
+	margin-left:20px;
+}
+footer{
+	color:#FFFFFF;
+	background-color: #696969;
+	position:fixed;
+	bottom: 0;
+	width: 100%;
+}
