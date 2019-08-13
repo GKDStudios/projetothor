@@ -23,7 +23,6 @@
     btnSave.addEventListener('click', saveTask);
     showList();
   }
-
   //End Init
 
   //CRUD task
@@ -166,6 +165,12 @@
     });
 
     return response;
+  }
+
+  function verTarefas(){
+    var btnVer = document.getElementById("btnVer");
+    btnVer.addEventListener('click', vertask);
+    window.localStorage.getItem()
   }
 
   //End Common

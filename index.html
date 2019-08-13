@@ -6,21 +6,33 @@
 		<link rel="stylesheet" href="CSS\thor.css" >
         <link rel="stylesheet" href="CSS\style.css">
 		<link rel="icon" href="https://previews.123rf.com/images/bourbon88/bourbon881801/bourbon88180100013/93009506-god-thor-hammer-mjollnir-round-traditional-scandinavian-ornament-and-runic-text-isolated-on-white-ve.jpg">
-		<title> Thor - daily chores </title>
+		<title> | Thor - daily chores | </title>
 	</head>
 	<body>
-		<ul class="flex">
-			<span class="font-semibold text-xl tracking-tight text-red-800  border-teal-200 ">- | Thor - daily chores | -</span>
-  			<li class="mr-6">
-    			<a class="text-blue-500 hover:text-blue-800" href="index.html">Adicionar</a>
-  			</li>
-  			<li class="mr-6">
-    			<a class="text-blue-500 hover:text-blue-800" href="ver.html">Ver tarefas</a>
-  			</li>
-  			<li class="mr-6">
-    			<a class="text-blue-500 hover:text-blue-800" href="editanddrop.html">Editar ou exluir</a>
-  			</li>
-		</ul>
+		<nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+          <div class="flex items-center flex-shrink-0 text-white mr-6">
+            <img src="https://png2.kisspng.com/sh/1fcc8394827e9e64b32e97b351054c36/L0KzQYi4UsA4N2c3fpGAYUK7dIa9UBFiPpYATpC6NEe5R4aBVcE2OWM7SqcAMEe5SYm4TwBvbz==/5a28d563aa6e96.1476758515126255076981.png" width="50" height="50" >
+            <span class="font-semibold text-xl tracking-tight">Thor | Daily Chores</span>
+          </div>
+          <div class="block lg:hidden">
+            <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+              <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+            </button>
+          </div>
+          <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+            <div class="text-sm lg:flex-grow">
+              <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+                Home
+              </a>
+              <a href="ver.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+                Ver Tarefas
+              </a>
+              <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
+                
+              </a>
+            </div>
+          </div>
+        </nav>
 		<main>
 			<form class="w-full max-w-sm" id="FrmTarefa">
 					<!-- tarefa a ser adicionada -->
