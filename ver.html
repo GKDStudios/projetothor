@@ -34,8 +34,8 @@
 		</nav>
 		<main>
 			<div align="center">
-   				<button class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded" type="button" id="btnVer"> Ver Tarefa </button>				
-  			</div
+			<button class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded" type="button" id="btnVerTarefa"> Ver Tarefas </button>
+			</div>
 			<table>
 
   			</table>
@@ -43,5 +43,16 @@
     	<footer>
     		&copy; Yampi 2019. 
     	</footer>
-    	<script src="script.js"></script>>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    		var pegaValor = window.localStorage.getItem('taskList');
+    		    if (!!taskList.length) {
+			      getLastTaskId();
+			      for (var item in taskList) {
+			        var task = taskList[item];
+			        addTaskToList(task);
+			      }
+			      syncEvents();
+			    }
+			    init();
+    	</script>
     </body>

@@ -90,18 +90,19 @@
     if (!!taskToUpdate) {
       var des = prompt("Alterar tarefa", taskToUpdate.taskDes);
       var state = prompt("Alterar data", taskToUpdate.taskState);
-      //var hora = prompt ("Alterar hora", taskToUpdate.taskHora);
-      //var feita = prompt ("Informe se está feita", taskToUpdate.taskFeita);
+      var hora = prompt ("Alterar hora", taskToUpdate.taskHora);
+      var feita = prompt ("Informe se está feita", taskToUpdate.taskFeita);
       taskToUpdate.taskDes = des;
       taskToUpdate.taskState = state;
-      //taskToUpdate.taskHora = hora; 
-      //taskToUpdate.taskFeita = feita;
+      taskToUpdate.taskHora = hora; 
+      taskToUpdate.taskFeita = feita;
       taskList[pos] = taskToUpdate;
       taskTag.lastChild.textContent = taskToUpdate.taskDes;
       taskTag.lastChild.textContent = taskToUpdate.taskState;
-      //taskTag.lastChild.textContent = taskToUpdate.taskHora;
-      //taskTag.lastChild.textContent = taskToUpdate.taskFeita;
+      taskTag.lastChild.textContent = taskToUpdate.taskHora;
+      taskTag.lastChild.textContent = taskToUpdate.taskFeita;
       syncTask();
+      alert('Suas Informações foram alteradas, atualize a pagina para ve-lás!');
     }
   }
 
@@ -165,12 +166,6 @@
     });
 
     return response;
-  }
-
-  function verTarefas(){
-    var btnVer = document.getElementById("btnVer");
-    btnVer.addEventListener('click', vertask);
-    window.localStorage.getItem()
   }
 
   //End Common

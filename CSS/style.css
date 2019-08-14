@@ -1,8 +1,4 @@
 #task_wrapper{
-  margin-left: 10px;
-}
-
-#task_wrapper{
   list-style: none;
 }
 #task_wrapper li{
@@ -29,4 +25,16 @@
 
 .hide{
   display: none;
+}
+.td1{
+  text-align: center;
+}
+.td2{
+  text-align: center;
+}
+.td3{
+  text-align: center;
+}
+.td4{
+  text-align: center;
 }

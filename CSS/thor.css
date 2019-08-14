@@ -3,7 +3,7 @@ main{
 	margin-top:80px;
 }
 .formulario{
-	margin-left: 140px;
+	margin-left: 93px;
 }
 li{
 	margin-top: 5px;
@@ -15,4 +15,8 @@ footer{
 	position:fixed;
 	bottom: 0;
 	width: 100%;
+}
+.tblNomes{
+	border:5px solid #0000;
+	margin-left:555px;
 }

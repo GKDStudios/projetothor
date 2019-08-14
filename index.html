@@ -2,9 +2,10 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="utf-8">
-		<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="CSS\thor.css" >
-        <link rel="stylesheet" href="CSS\style.css">
+        <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" >
+		<link rel="stylesheet" href="CSS\style.css">
+        <link rel="stylesheet" href="CSS\thor.css" >
 		<link rel="icon" href="https://previews.123rf.com/images/bourbon88/bourbon881801/bourbon88180100013/93009506-god-thor-hammer-mjollnir-round-traditional-scandinavian-ornament-and-runic-text-isolated-on-white-ve.jpg">
 		<title> | Thor - daily chores | </title>
 	</head>
@@ -16,21 +17,8 @@
           </div>
           <div class="block lg:hidden">
             <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-              <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+              <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Nothing</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
             </button>
-          </div>
-          <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-            <div class="text-sm lg:flex-grow">
-              <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-                Home
-              </a>
-              <a href="ver.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-                Ver Tarefas
-              </a>
-              <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
-                
-              </a>
-            </div>
           </div>
         </nav>
 		<main>
@@ -60,7 +48,7 @@
     				<!-- Opções -->
     				<li>
     					<div class="flex items-center border-b border-b-2 border-teal-500 py-2">
- 							<input class="tarefa-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" action="" placeholder="Informe se ela está feita" aria-label="fchore" id="task_feita">
+ 							<input class="tarefa-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" action="" placeholder="Informe se ela está feita ou a fazer" aria-label="fchore" id="task_feita">
 						</div><br>
 					</li>
 					<li>
@@ -72,16 +60,21 @@
 					</li>
 				</ul>
 			</form>
-					
-  			<table id="task_wrapper">
-
-  			</table>
 		</main>
+        <table class="tblNomes bg-black" align="center">
+                <tr>
+                    <td class="td1 bg-green-400 text-white" width="100">TAREFAS</td><td></td>
+                    <td class="td2 bg-green-400 text-white" width="92">DATA<td></td>
+                    <td class="td3 bg-green-400 text-white" width="48">HORA</td><td></td>
+                    <td class="td4 bg-green-400 text-white" width="150">FEITA OU A FAZER</td>
+                </tr>
+            </table>    
+            <table id="task_wrapper" align="center">
+
+            </table>
     	<footer>
     		&copy; Yampi 2019. 
     	</footer>
-    	<script src="script.js">   
-
-        </script>
+    	<script src="script.js"></script>
 	</body>
 </html>
