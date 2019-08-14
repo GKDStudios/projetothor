@@ -15,6 +15,7 @@
             <img src="https://png2.kisspng.com/sh/1fcc8394827e9e64b32e97b351054c36/L0KzQYi4UsA4N2c3fpGAYUK7dIa9UBFiPpYATpC6NEe5R4aBVcE2OWM7SqcAMEe5SYm4TwBvbz==/5a28d563aa6e96.1476758515126255076981.png" width="50" height="50" >
             <span class="font-semibold text-xl tracking-tight">Thor | Daily Chores</span>
           </div>
+            <li><a href="#task_wrapper" id="topo" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">Ver Lista de Tarefas</a></li>
           <div class="block lg:hidden">
             <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
               <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Nothing</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
@@ -61,6 +62,15 @@
 				</ul>
 			</form>
 		</main>
+        <div class="max-w-sm rounded overflow-hidden shadow-lg" id="card_thor">
+          <img class="w-full" src="https://static.todamateria.com.br/upload/th/or/thorbarba-cke.jpg" alt="THOR DEUS GREGO">
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">DICA PARA O USUARIO</div>
+            <p class="text-gray-700 text-base">
+              X para deletar a tarefa, U para editar essas informações.
+            </p>
+          </div>
+        </div>
         <table class="tblNomes bg-black" align="center">
                 <tr>
                     <td class="td1 bg-green-400 text-white" width="100">TAREFAS</td><td></td>
@@ -72,7 +82,9 @@
             <table id="task_wrapper" align="center">
 
             </table>
-    	<footer>
+            <a class="voltaTopo bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded" href="#topo"> Voltar para o topo </a>
+            <div class="rodapé"><span>nhá</span></div>
+        <footer>
     		&copy; Yampi 2019. 
     	</footer>
     	<script src="script.js"></script>

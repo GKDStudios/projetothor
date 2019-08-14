@@ -1,5 +1,6 @@
 main{
-	margin:350px;
+	margin-left:350px;
+	margin-right:350px;
 	margin-top:80px;
 }
 .formulario{
@@ -19,4 +20,18 @@ footer{
 .tblNomes{
 	border:5px solid #0000;
 	margin-left:555px;
+}
+#card_thor{
+	float:right;
+	position:absolute;
+	top:200px;
+}
+.voltaTopo{
+	position: absolute;
+	right: 40px;
+	bottom: -70px;
+}
+.rodapé{
+	position: absolute;
+	bottom: -120px;
 }
