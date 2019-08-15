@@ -37,8 +37,13 @@ footer{
 	position: absolute;
 	bottom: -400px;
 }
-.verTabela{
+.ver{
 	position: absolute;
 	left:40px;
 	bottom: -300px;
+}
+.verTabela{
+	position: absolute;
+	left: 600px;
+	top: 200px;
 }

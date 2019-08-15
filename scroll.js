@@ -13,4 +13,6 @@ $('.voltaTopo').click(function scrollAutomatico2(e){
 $('.verTabela').click(function verTarefas(e){
 	e.preventDefault();
 	var pega =	JSON.parse(localStorage.getItem('taskList'));
+	document.body.querySelector("task_wrapper").innerHTML = pega;
+	console.log(pega);
 });
