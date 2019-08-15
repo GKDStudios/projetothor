@@ -18,20 +18,27 @@ footer{
 	width: 100%;
 }
 .tblNomes{
-	border:5px solid #0000;
-	margin-left:555px;
+	border:3px solid #000000;
+	margin-left:559px;
 }
 #card_thor{
+	border:1px solid #000000;
 	float:right;
 	position:absolute;
-	top:200px;
+	top:400px;
+	left:10px;
 }
 .voltaTopo{
 	position: absolute;
 	right: 40px;
-	bottom: -70px;
+	bottom: -300px;
 }
 .rodapé{
 	position: absolute;
-	bottom: -120px;
+	bottom: -400px;
+}
+.verTabela{
+	position: absolute;
+	left:40px;
+	bottom: -300px;
 }
