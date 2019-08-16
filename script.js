@@ -77,7 +77,7 @@
     element.innerHTML +='| ' + task.taskDes + ' | ';
     element.innerHTML += task.taskState + ' | ';
     element.innerHTML += task.taskHora + ' | ';
-    element.innerHTML += task.taskFeita + ' | ';
+    element.innerHTML += task.taskFeita;
     taskWrapper.appendChild(element);
   }
 

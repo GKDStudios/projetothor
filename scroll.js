@@ -12,7 +12,8 @@ $('.voltaTopo').click(function scrollAutomatico2(e){
 });
 $('.verTabela').click(function verTarefas(e){
 	e.preventDefault();
-	var pega =	JSON.parse(localStorage.getItem('taskList'));
-	document.body.querySelector("task_wrapper").innerHTML = pega;
-	console.log(pega);
+	var element = document.createElement('li');
+	var pega;
+	element.innerHTML += pega = JSON.parse(localStorage.getItem('taskList'));
+	listWrapper.appendChild(element);
 });

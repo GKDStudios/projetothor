@@ -1,8 +1,18 @@
+#listWrapper{
+  list-style: none;
+  border:2px solid #000000;
+  position: absolute;
+  top:350px;
+  left:500px;
+  padding-bottom: 5px;
+  text-align: center;
+}
 #task_wrapper{
   list-style: none;
 }
 #task_wrapper li{
   padding-bottom: 5px;
+  border:2px solid #000000;
 }
 .remove_item{
   color: red;
