@@ -1,11 +1,13 @@
 #listWrapper{
   list-style: none;
-  border:2px solid #000000;
   position: absolute;
   top:350px;
   left:500px;
   padding-bottom: 5px;
   text-align: center;
+}
+#listWrapper li{
+  border:2px solid #000000;
 }
 #task_wrapper{
   list-style: none;
