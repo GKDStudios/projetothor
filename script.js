@@ -14,7 +14,6 @@
   // Render the list
 
   function init() {
-
     if (!!(window.localStorage.getItem('taskList'))) {
       taskList = JSON.parse(window.localStorage.getItem('taskList'));
     } else {
@@ -171,6 +170,5 @@
   //End Common
 
   init();
-
 
 })();
