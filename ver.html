@@ -6,53 +6,51 @@
 		<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="CSS\style.css">
 		<link rel="stylesheet" href="CSS\thor.css" >
-		<link rel="icon" href="https://previews.123rf.com/images/bourbon88/bourbon881801/bourbon88180100013/93009506-god-thor-hammer-mjollnir-round-traditional-scandinavian-ornament-and-runic-text-isolated-on-white-ve.jpg">
+		<link rel="icon" href="imgs/thor3.png">
 		<title> Thor - daily chores </title>
 	</head>
 	<body>
-		<nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+		<nav class="flex items-center justify-between flex-wrap bg-gray-700 p-6">
   			<div class="flex items-center flex-shrink-0 text-white mr-6" id="img">
-    			<img src="https://png2.kisspng.com/sh/1fcc8394827e9e64b32e97b351054c36/L0KzQYi4UsA4N2c3fpGAYUK7dIa9UBFiPpYATpC6NEe5R4aBVcE2OWM7SqcAMEe5SYm4TwBvbz==/5a28d563aa6e96.1476758515126255076981.png" width="50" height="50" >
+    			<img src="imgs/thor3.png" width="50" height="50" >
     			<span class="font-semibold text-xl tracking-tight">Thor | Daily Chores</span>
   			</div>
   			<div class="block lg:hidden">
-   				<button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+   				<button class="flex items-center px-3 py-2 border rounded text-gray-700 border-gray-700 hover:text-white hover:border-white">
       			<svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
     			</button>
   			</div>
   			<div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
     			<div class="text-sm lg:flex-grow">
-				    <a href="index.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-				        Adicionar
+				    <a href="index.html" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-orange-500 mr-4">
+				        <strong>Adicionar</strong>
 				    </a>
 				    <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">   
 	      			</a>
     			</div>
-    			 <a href="#listWrapper" id="topo" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">Ver Lista de Tarefas</a>
- 			 </div>
+    			 <a href="#listWrapper" id="topo" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-orange-500 mr-4">
+    			 	<strong>Ver Lista de Tarefas</strong></a>
+ 			 	</div>
 		</nav>
-		<button class="verTabela bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded">Ver tabela</button>
-		<main>   
-			<table id="listWarpper" align="center">
+		<button class="verTabela bg-white hover:bg-white border-white hover:border-white text-sm border-4 text-white py-1 px-2 rounded" id="save_task">Ver tabela</button>
 
-  			</table>
-		</main>
-		<table class="tbltrf bg-black" align="center">
+		<main><table class="tbltrf bg-black" align="center">
             <tr>
-                <td class="td1 bg-green-400 text-white" width="100"><strong>TAREFAS</strong></td><td></td>
-                <td class="td2 bg-green-400 text-white" width="92"><strong>DATA</strong><td></td>
-                <td class="td3 bg-green-400 text-white" width="50"><strong>HORA</strong></td><td></td>
-                <td class="td4 bg-green-400 text-white" width="150"><strong>FEITA OU A FAZER</strong></td>
+                <td class="td1 bg-indigo-500 text-white" width="100"><strong>TAREFAS</strong></td><td></td>
+                <td class="td2 bg-indigo-500 text-white" width="92"><strong>DATA</strong><td></td>
+                <td class="td3 bg-indigo-500 text-white" width="50"><strong>HORA</strong></td><td></td>
+                <td class="td4 bg-indigo-500 text-white" width="150"><strong>FEITA OU A FAZER</strong></td>
             </tr>
-        </table> 
-        <table id="listWrapper" align="center">
+        </table></main> 
+        <table id="task_wrapper" align="center" class="mostra">
 
   		</table>
-		 <a class="voltaTopo bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded" href="#topo"> Voltar para o topo </a>
+		 <a class="voltaTopo bg-gray-500 hover:bg-gray-700 border-gray-500 hover:border-gray-700 text-sm border-4 text-white py-1 px-2 rounded" href="#topo"> Voltar para o topo </a>
 		 <div class="rodapé"><span>.</span></div>
     	<footer>
     		&copy; Yampi 2019. 
     	</footer>
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    	<script src="scroll.js"></script>
+    	<script src="scripts/scroll.js"></script>
+    	<script src="scripts/script.js"></script>
     </body>

@@ -8,7 +8,7 @@
   text-align: center;
 }
 #listWrapper li{
-  border:2px solid #000000;
+  border:2px solid #667EEA;
   text-align: center;
 }
 #task_wrapper{
@@ -16,7 +16,7 @@
 }
 #task_wrapper li{
   padding-bottom: 5px;
-  border:2px solid #000000;
+  border:2px solid #667EEA;
 }
 .remove_item{
   color: red;

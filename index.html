@@ -6,18 +6,20 @@
         <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" >
 		<link rel="stylesheet" href="CSS\style.css">
         <link rel="stylesheet" href="CSS\thor.css" >
-		<link rel="icon" href="https://previews.123rf.com/images/bourbon88/bourbon881801/bourbon88180100013/93009506-god-thor-hammer-mjollnir-round-traditional-scandinavian-ornament-and-runic-text-isolated-on-white-ve.jpg">
+		<link rel="icon" href="imgs/thor3.png">
 		<title> | Thor - daily chores | </title>
 	</head>
 	<body>
-		<nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+		<nav class="flex items-center justify-between flex-wrap bg-gray-700 p-6">
           <div class="flex items-center flex-shrink-0 text-white mr-6">
-            <img src="https://png2.kisspng.com/sh/1fcc8394827e9e64b32e97b351054c36/L0KzQYi4UsA4N2c3fpGAYUK7dIa9UBFiPpYATpC6NEe5R4aBVcE2OWM7SqcAMEe5SYm4TwBvbz==/5a28d563aa6e96.1476758515126255076981.png" width="50" height="50" >
+            <img src="imgs/thor3.png" width="50" height="50" >
             <span class="font-semibold text-xl tracking-tight">Thor | Daily Chores</span>
           </div>
-            <a href="#task_wrapper" id="topo" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">Ver Lista de Tarefas</a>
+            <a href="#task_wrapper" id="topo" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-orange-500 mr-4">
+                <strong>Ver Lista de Tarefas</strong>
+            </a>
           <div class="block lg:hidden">
-            <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+            <button class="flex items-center px-3 py-2 border rounded text-gray-700 border-gray-700 hover:text-white hover:border-white">
               <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Nothing</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
             </button>
           </div>
@@ -27,20 +29,20 @@
 					<!-- tarefa a ser adicionada -->
 				<ul class="formulario">
 					<li>
-  						<div class="flex items-center border-b border-b-2 border-teal-500 py-2">
+  						<div class="flex items-center border-b border-b-2 border-indigo-500 py-2">
     						<input class="tarefa-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" action="" placeholder="Tarefa a ser adicionada" aria-label="fchore" id="task_des"><br>
     					</div>
     				</li>
     				<!-- Data -->
     				<li>
-    					<div class="flex items-center border-b border-b-2 border-teal-500 py-2">
+    					<div class="flex items-center border-b border-b-2 border-indigo-500 py-2">
     						<label for="data">DATA:</label>	
     						<input class="data-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="date" action="" placeholder="Data" aria-label="fdate" id="task_state"><br>
     					</div>
     				</li>
     				<!-- Hora -->
     				<li>
-    					<div class="flex items-center border-b border-b-2 border-teal-500 py-2">
+    					<div class="flex items-center border-b border-b-2 border-indigo-500 py-2">
     						<label for="hora">HORA:</label>
     						<input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="time" action="" placeholder="Hora" aria-label="ftime" id="task_hora">
     					</div>
@@ -48,24 +50,24 @@
     				</li>
     				<!-- Opções -->
     				<li>
-    					<div class="flex items-center border-b border-b-2 border-teal-500 py-2">
+    					<div class="flex items-center border-b border-b-2 border-indigo-500 py-2">
  							<input class="tarefa-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" action="" placeholder="Informe se ela está feita ou a fazer" aria-label="fchore" id="task_feita">
 						</div><br>
 					</li>
 					<li>
 						<!-- botões -->
 						<div align="center">
-   							<input class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded" type="submit" value="Adicionar" id="save_task">
+   							<input class="flex-shrink-0 bg-gray-500 hover:bg-gray-700 border-gray-500 hover:border-gray-700 text-sm border-4 text-white py-1 px-2 rounded" type="submit" value="Adicionar" id="save_task">
     						
   						</div><br><br>
 					</li>
 				</ul>
 			</form>
 		</main>
-        <div class="max-w-sm rounded overflow-hidden shadow-lg" id="card_thor">
-          <img class="w-full" src="https://static.todamateria.com.br/upload/th/or/thorbarba-cke.jpg" alt="THOR DEUS GREGO">
+        <div class="max-w-sm rounded overflow-hidden shadow-lg" id="card_thor" style="width: 295px; height: 295px;" >
+          <img class="w-full" src="https://static.todamateria.com.br/upload/th/or/thorbarba-cke.jpg"  alt="THOR DEUS GREGO">
           <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">DICA DO THOR PARA O USUARIO</div>
+            <div class="font-bold text-l mb-1">DICA DO THOR PARA O USUARIO</div>
             <p class="text-gray-900 text-base">
               X para deletar a tarefa, U para editar essas informações.
             </p>
@@ -73,24 +75,25 @@
         </div>
         <table class="tblNomes bg-black" align="center">
                 <tr>
-                    <td class="td1 bg-green-400 text-white" width="50"><strong>X | U</strong></td><td></td>
-                    <td class="td1 bg-green-400 text-white" width="100"><strong>TAREFAS</strong></td><td></td>
-                    <td class="td2 bg-green-400 text-white" width="92"><strong>DATA</strong><td></td>
-                    <td class="td3 bg-green-400 text-white" width="50"><strong>HORA</strong></td><td></td>
-                    <td class="td4 bg-green-400 text-white" width="150"><strong>FEITA OU A FAZER</strong></td>
+                    <td class="td1 bg-indigo-500 text-red-500" width="28"><strong>X</strong></td><td></td>
+                    <td class="td1 bg-indigo-500 text-green-500" width="28"><strong>U</strong></td><td></td>
+                    <td class="td1 bg-indigo-500 text-white" width="100"><strong>TAREFAS</strong></td><td></td>
+                    <td class="td2 bg-indigo-500 text-white" width="92"><strong>DATA</strong><td></td>
+                    <td class="td3 bg-indigo-500 text-white" width="50"><strong>HORA</strong></td><td></td>
+                    <td class="td4 bg-indigo-500 text-white" width="150"><strong>FEITA OU A FAZER</strong></td>
                 </tr>
             </table> <br>   
             <table id="task_wrapper" align="center">
 
             </table>
-            <a class="voltaTopo bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded" href="#topo"> Voltar para o topo </a>
-            <a class="ver bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded" href="ver.html"> Ver apenas a tabela </a>
+            <a class="voltaTopo bg-gray-500 hover:bg-gray-700 border-gray-500 hover:border-gray-700 text-sm border-4 text-white py-1 px-2 rounded" href="#topo"> Voltar para o topo </a>
+            <a class="ver bg-gray-500 hover:bg-gray-700 border-gray-500 hover:border-gray-700 text-sm border-4 text-white py-1 px-2 rounded" href="ver.html"> Ver apenas a tabela </a>
             <div class="rodapé"><span>nhá</span></div>
         <footer>
     		&copy; Yampi 2019. 
     	</footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
-    	<script src="script.js" type="text/javascript"></script>
-        <script src="scroll.js" type="text/javascript"></script>
+    	<script src="scripts/script.js" type="text/javascript"></script>
+        <script src="scripts/scroll.js" type="text/javascript"></script>
 	</body>
 </html>

@@ -19,7 +19,7 @@ footer{
 }
 .tblNomes{
 	border:3px solid #000000;
-	margin-left:500px;
+	margin-left:470px;
 }
 #card_thor{
 	border:1px solid #000000;
@@ -44,13 +44,15 @@ footer{
 	bottom: 50px;
 }
 .verTabela{
-	position: absolute;
-	left: 600px;
+	right:0px;
 	top: 200px;
 }
 .tbltrf{
-	border:3px solid #000000;
+	border:3px solid;
 	position: absolute;
-	top:300px;
+	top:170px;
 	left:500px;
+}
+.mostra{
+	top:100px;
 }
