@@ -25,9 +25,9 @@
           </div>
         </nav>
 		<main>
-			<form class="w-full max-w-sm" id="FrmTarefa">
+			<form class="frmTarefa w-full max-w-sm items-center">
 					<!-- tarefa a ser adicionada -->
-				<ul class="formulario">
+				<ul class="formulario items-center">
 					<li>
   						<div class="flex items-center border-b border-b-2 border-indigo-500 py-2">
     						<input class="tarefa-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" action="" placeholder="Tarefa a ser adicionada" aria-label="fchore" id="task_des"><br>
@@ -51,27 +51,31 @@
     				<!-- Opções -->
     				<li>
     					<div class="flex items-center border-b border-b-2 border-indigo-500 py-2">
- 							<input class="tarefa-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" action="" placeholder="Informe se ela está feita ou a fazer" aria-label="fchore" id="task_feita">
+ 							<input class="tarefa-none bg-transparent border-none w-full text-gray-700 text-sm mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" action="" placeholder="Informe se ela está feita ou a fazer" aria-label="fchore" id="task_feita">
 						</div><br>
 					</li>
 					<li>
 						<!-- botões -->
 						<div align="center">
    							<input class="flex-shrink-0 bg-gray-500 hover:bg-gray-700 border-gray-500 hover:border-gray-700 text-sm border-4 text-white py-1 px-2 rounded" type="submit" value="Adicionar" id="save_task">
+                            <a class="dica bg-gray-500 hover:bg-gray-700 border-gray-500 hover:border-gray-700 text-sm border-4 text-white py-1 px-2 rounded" href="#bloco"> Dicas </a>
     						
   						</div><br><br>
 					</li>
 				</ul>
 			</form>
 		</main>
-        <div class="max-w-sm rounded overflow-hidden shadow-lg" id="card_thor" style="width: 295px; height: 295px;" >
-          <img class="w-full" src="https://static.todamateria.com.br/upload/th/or/thorbarba-cke.jpg"  alt="THOR DEUS GREGO">
-          <div class="px-6 py-4">
-            <div class="font-bold text-l mb-1">DICA DO THOR PARA O USUARIO</div>
-            <p class="text-gray-900 text-base">
-              X para deletar a tarefa, U para editar essas informações.
-            </p>
-          </div>
+
+        <div id="bloco"></div>
+        <div class="boxInfo max-w-sm rounded overflow-hidden shadow-lg" >
+          <img src="https://static.todamateria.com.br/upload/th/or/thorbarba-cke.jpg"  alt="THOR DEUS GREGO">
+          <a href="" id="fechar">X</a>
+            <div class="px-6 py-4">
+                <p class="font-bold text-white text-l mb-1">DICA DO THOR PARA O USUARIO</p>
+                <p class="text-white text-base">
+                    X para deletar a tarefa, U para editar essas informações.
+                </p>
+            </div>
         </div>
         <table class="tblNomes bg-black" align="center">
                 <tr>
