@@ -24,7 +24,7 @@ footer{
 }
 .tblNomes{
 	border:3px solid #000000;
-	margin-left:470px;
+	margin-left: 118px;
 }
 .voltaTopo{
 	position: fixed;
@@ -49,7 +49,7 @@ footer{
 	border:3px solid;
 	position: absolute;
 	top:170px;
-	left:500px;
+	margin-left: 133px;
 }
 .mostra{
 	top:100px;
@@ -68,15 +68,15 @@ footer{
 }
 #bloco:target ~ .boxInfo{
 	top:150px;
-	transition: all .3s;
-	transition-delay: .2s;
+	transition: all .5s;
+	transition-delay: .4s;
 }
 .boxInfo{
 	width: 295px;
 	height: 295px;
 	position: absolute;
 	margin-left: 147px;
-	left: 50%;
+	left: 48%;
 	top: -1000px;
 }
 .boxInfo div{
@@ -103,3 +103,28 @@ footer{
 #fechar:hover{
 	opacity: .6;
 }
+
+
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace-inactive {
+  display: none;
+}
+
+.pace .pace-progress {
+  background: #eb7a55;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 2px;
+}
+
