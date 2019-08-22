@@ -19,3 +19,7 @@ $('.voltaTopo').click(function scrollAutomatico2(e){
  $('.verTabela').click(function verTarefas(e){
   e.preventDefault();
 });
+ $('.voltaTopo2').click(function scrollAutomatico3(e){
+ 	e.preventDefault();
+ 	$('html, body').animate({scrollTop:0}, 1000)
+ });
