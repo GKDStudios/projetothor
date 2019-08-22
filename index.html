@@ -28,6 +28,9 @@
                         <a href="index.html" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-orange-500 mr-4">
                             <strong>Adicionar</strong>
                         </a>
+                        <a href="ver.html" id="top" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-orange-500 mr-4">
+                            <strong>Ver apenas as tarefas</strong> 
+                        </a>
                         <a href="#task_wrapper" id="topo" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-orange-500 mr-4">
                         <strong>Ver Lista de Tarefas</strong>
                         </a>
@@ -43,6 +46,11 @@
         					<!-- tarefa a ser adicionada -->
         				<ul class="formulario items-center">
         					<li>
+                                <div class="flex items-center border-b border-b-2 border-indigo-500 py-2">
+                                    <input class="tarefa-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" action="" placeholder="Seu nome" aria-label="fchore" id="task_nome"><br>
+                                </div>
+                            </li>
+                            <li>
           						<div class="flex items-center border-b border-b-2 border-indigo-500 py-2">
             						<input class="tarefa-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" action="" placeholder="Tarefa a ser adicionada" aria-label="fchore" id="task_des"><br>
             					</div>
@@ -93,6 +101,7 @@
                         <tr>
                             <td class="td1 bg-indigo-500 text-red-500" width="28"><strong>X</strong></td><td></td>
                             <td class="td1 bg-indigo-500 text-green-500" width="28"><strong>U</strong></td><td></td>
+                            <td class="td1 bg-indigo-500 text-white" width="60"><strong>NOME</strong></td><td></td>
                             <td class="td1 bg-indigo-500 text-white" width="100"><strong>TAREFAS</strong></td><td></td>
                             <td class="td2 bg-indigo-500 text-white" width="92"><strong>DATA</strong><td></td>
                             <td class="td3 bg-indigo-500 text-white" width="50"><strong>HORA</strong></td><td></td>

@@ -22,4 +22,4 @@ $('.voltaTopo').click(function scrollAutomatico2(e){
  $('.voltaTopo2').click(function scrollAutomatico3(e){
  	e.preventDefault();
  	$('html, body').animate({scrollTop:0}, 1000)
- });
+ });	

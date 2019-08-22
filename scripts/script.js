@@ -43,6 +43,7 @@
 
     var task = {
       taskId: lastId,
+      taskNome: document.getElementById("task_nome").value,
       taskDes: document.getElementById("task_des").value,
       taskState: document.getElementById("task_state").value,
       taskHora: document.getElementById("task_hora").value,
@@ -73,7 +74,8 @@
     element.appendChild(removeIcon);
     element.appendChild(updateIcon);
     element.setAttribute("id", task.taskId);
-    element.innerHTML +='| ' + task.taskDes + ' | ';
+    element.innerHTML += ' | ' + task.taskNome + ' | ';
+    element.innerHTML += task.taskDes + ' | ';
     element.innerHTML += task.taskState + ' | ';
     element.innerHTML += task.taskHora + ' | ';
     element.innerHTML += task.taskFeita;
